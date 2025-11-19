@@ -54,7 +54,10 @@ def create_app():
 
     return app
 
+# Création de l'application Flask
+app = create_app()
+
 if __name__ == '__main__':
-    app = create_app()
+    # Exécution du serveur de développement uniquement si le script est exécuté directement
     app.run(host='0.0.0.0', port=5000, debug=True)
 
